@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProject_Hailea">
         <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Timer"
+            android:exported="false" />
+        <activity
+            android:name=".EventsTracker"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
