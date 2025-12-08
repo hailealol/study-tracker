@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/ivProfilePic"
         android:layout_width="104dp"
         android:layout_height="104dp"
         android:contentDescription="User's profile picture"
@@ -45,15 +45,16 @@
 
     <TextView
         android:id="@+id/tvWelcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="276dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
         android:text="@string/tvWelcome"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.392"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivProfilePic"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.098" />
+        app:layout_constraintVertical_bias="0.102" />
 
     <TextView
         android:id="@+id/tvHome"

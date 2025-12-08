@@ -63,6 +63,7 @@ public class Profile extends AppCompatActivity {
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     pic.setImageResource(profilePictures[position]);
                     imgId = profilePictures[position];
+                    selectedPosition = position;
                 }
             });
 
@@ -104,7 +105,11 @@ public class Profile extends AppCompatActivity {
 
         SharedPreferences.Editor editor = userPrefs.edit();
         editor.putString("userName", userName);
-        editor.putInt("userImg", imgId);
+        if (selectedPosition == -1) {
+            editor.putInt("userImg", R.drawable.default_pfp);
+        } else {
+            editor.putInt("userImg", imgId);
+        }
         editor.commit();
 
         updateUI(userName,imgId);
@@ -113,7 +118,7 @@ public class Profile extends AppCompatActivity {
 
     public void loadPreferences() {
         String loadName = userPrefs.getString("userName", "");
-        int loadImg = userPrefs.getInt("userImg", 0);
+        int loadImg = userPrefs.getInt("userImg", R.drawable.default_pfp);
 
         if (loadName.isEmpty()) {
             return;

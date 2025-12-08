@@ -10,4 +10,12 @@
     <string name="btnSave">Save your preferences</string>
     <string name="btnClear">Clear your preferences</string>
     <string name="btnHome">Return to home page</string>
+    <string name="tvEvents">Events Tracker</string>
+    <string name="btnAddTest">Add a new exam</string>
+    <string name="tvSubject">Test subject:</string>
+    <string name="tvDate">Test date:</string>
+    <string name="tvNotes">Notes (optional):</string>
+    <string name="btnPickDate">Select date</string>
+    <string name="btnSaveTest">Save Test Entry</string>
+    <string name="btnReturn">Return to tracker</string>
 </resources>
