@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">finalProject_Hailea</string>
+    <string name="app_name">Study Tracker</string>
+    <string name="tvWelcome">Welcome!</string>
+    <string name="tvNavigation">Navigation:</string>
+    <string name="tvHome">Home</string>
+    <string name="tvProfile">Edit Profile</string>
+    <string name="tvProfilePicture">Profile Picture:</string>
+    <string name="tvName">Your name:</string>
+    <string name="etName">enter your name...</string>
+    <string name="btnSave">Save your preferences</string>
+    <string name="btnClear">Clear your preferences</string>
+    <string name="btnHome">Return to home page</string>
 </resources>
