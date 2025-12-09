@@ -2,12 +2,10 @@ package com.example.finalproject_hailea;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridView;
@@ -43,7 +41,7 @@ public class Profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_profile);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.rootLayout), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
 
@@ -106,6 +104,7 @@ public class Profile extends AppCompatActivity {
         SharedPreferences.Editor editor = userPrefs.edit();
         editor.putString("userName", userName);
         if (selectedPosition == -1) {
+            imgId = R.drawable.default_pfp;
             editor.putInt("userImg", R.drawable.default_pfp);
         } else {
             editor.putInt("userImg", imgId);
@@ -142,6 +141,7 @@ public class Profile extends AppCompatActivity {
         editor.clear();
         editor.commit();
 
+        selectedPosition = -1;
         chooseName.setText("");
         pic.setImageResource(R.drawable.default_pfp);
         Toast.makeText(this, "Your profile has been cleared!", Toast.LENGTH_LONG).show();

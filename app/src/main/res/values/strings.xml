@@ -10,7 +10,8 @@
     <string name="btnSave">Save your preferences</string>
     <string name="btnClear">Clear your preferences</string>
     <string name="btnHome">Return to home page</string>
-    <string name="tvEvents">Events Tracker</string>
+    <string name="etSubject">enter a subject...</string>
+    <string name="etNotes">enter notes here...</string>
     <string name="btnAddTest">Add a new exam</string>
     <string name="tvSubject">Test subject:</string>
     <string name="tvDate">Test date:</string>
@@ -18,4 +19,12 @@
     <string name="btnPickDate">Select date</string>
     <string name="btnSaveTest">Save Test Entry</string>
     <string name="btnReturn">Return to tracker</string>
+    <string name="tvTimer">Timer</string>
+    <string name="tvDisplayTimer">00:00</string>
+    <string name="tvEnterTime">Enter time (minutes):</string>
+    <string name="etTime">enter minutes here...</string>
+    <string name="tvTimeSec">Enter time (seconds):</string>
+    <string name="etTimeSec">enter seconds here...</string>
+    <string name="btnStart">Start timer</string>
+    <string name="btnReset">Reset timer</string>
 </resources>
