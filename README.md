@@ -9,8 +9,7 @@ This study tracker app contains the following features:
 Build & Run Steps:
   1. Clone this repo or download the project zip
   2. Open the project in Android Studio
-     > Open Android Studio
-     > Click Open an exisitng project & navigate to your download
+     > Open Android Studio > Click Open an exisitng project & navigate to your download
   3. Click Sync Now when prompted by Android Studio to sync the Gradle
   4. Build the project by going to Build > Assemble Project
   5. Connect desired device (this project was built using the Pixel 9 emulator)
