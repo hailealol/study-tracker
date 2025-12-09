@@ -3,7 +3,7 @@
     <style name="Base.Theme.FinalProject_Hailea" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <!--<item name="colorPrimary">@color/mainColor</item> -->
+        <item name="colorPrimary">@color/pink</item>
     </style>
 
     <style name="Theme.FinalProject_Hailea" parent="Base.Theme.FinalProject_Hailea" />

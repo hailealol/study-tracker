@@ -2,6 +2,7 @@ package com.example.finalproject_hailea;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
@@ -101,6 +102,7 @@ public class EventsTracker extends AppCompatActivity {
         // a button to delete any test entry
         Button btnDelete = new Button(this);
         btnDelete.setText("Delete this test");
+        btnDelete.setBackgroundColor(Color.parseColor("#B0C4B1"));
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
